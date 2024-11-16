@@ -1,0 +1,115 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .leftSide img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .rightSide {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightSide a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .rightSide a:hover {
+    color: #ff5733; /* Change the color to your preferred hover color */
+  }
+  
+  .shopping-cart-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .cart-trolley {
+    font-size: 24px;
+    margin-right: 5px;
+  }
+  
+  .cart-total--item {
+    width: 0.5rem;
+    position: absolute;
+    background-color: #ff5733; /* Change the background color to your preferred cart item count color */
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    display: grid;
+    place-items: center;
+    top: 3%;
+    left: 98%;
+    font-size: 70% ;
+}
+
+
+  /* Add styles for mobile navigation toggle here */
+
+@media (max-width: 768px) {
+    .rightSide {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    background-color: #333;
+    width: 100%;
+    transition: left 0.3s;
+    }
+
+    .rightSide.show {
+    left: 0;
+    }
+
+    .rightSide a {
+    margin: 10px 0;
+    }
+}
+
+.navbar .rightSide svg {
+    font-size: 30px;
+}
+
+.navbar #open {
+    padding-left: 0px;
+}
+
+.navbar #open img {
+    display: none;
+}
+
+.navbar #close img {
+    display: inherit;
+}
+
+.navbar #open a {
+    width: 70px;
+    margin: 5px;
+}
+@media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+    display: none;
+    }
+
+.hiddenLinks {
+    display: none;
+    }
+}

@@ -1,0 +1,166 @@
+
+/* Navbar Container */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+
+/* Left Side */
+.leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+}
+
+/* Logo Image */
+.leftSide img {
+    width: 70px; 
+    height: auto; 
+}
+
+
+/* Right Side */
+.rightSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+    justify-content: center;
+}
+
+/* Links in Right Side */
+.navbar  a {
+    color: #060404;
+    text-decoration: none;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.rightSide a:hover {
+    color: #235a27;
+}
+
+.navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: rgb(15, 10, 10);
+    cursor: pointer;
+}
+
+
+/** cart **/
+/* Style the Cart link */
+
+
+.shopping-cart-icon {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    align-items: center;
+}
+
+/* Style the shopping cart icon */
+
+.cart-trolley {
+    position: relative;
+    font-size: -20px; /* Adjust the font-size to make the icon smaller (e.g., 20px) */
+    margin-right: 50px; /* Add some spacing between the icon and text */
+}
+
+/* Style the cart total item count */
+
+.cart-total--item {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    background-color: #7dde83;
+    color: #000;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    top: 2.8%;
+    left: 98.5%;
+    font-size: 70% ;
+
+}
+
+/**
+.navbar .rightSide .shopping-cart-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #110a0a;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar .rightSide .shopping-cart-icon:hover {
+    color: #235a27;
+}
+
+**/
+.navbar .rightSide svg {
+    font-size: 30px;
+}
+
+.navbar #open {
+    padding-left: 0px;
+}
+
+.navbar #open img {
+    display: none;
+}
+
+.navbar #close img {
+    display: inherit;
+}
+
+.navbar #open a {
+    width: 70px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+    width: 70px;
+    }
+    .navbar .leftSide {
+    padding-left: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar .rightSide a {
+    display: none;
+    }
+
+.navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+    }
+
+.navbar .rightSide button {
+    display: inherit;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar .rightSide button {
+    display: none;
+    }
+
+.hiddenLinks {
+    display: none;
+    }
+}
+
